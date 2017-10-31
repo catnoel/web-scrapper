@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body { background-color: #Fff; font-family: Helvetica Neue,Helvetica,sans-serif; }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #818080;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: #000;
+          font-weight: bolder;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      p { 
+        color:#f1088c;
+        border-bottom: 2px solid #818080;
+      }
+    </style>
+  </head>
+  <body>
+      <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li id="scrapebutton"><a href="#news">Scrape</a></li>
+      </ul>
+    <div id="wrapper">
+      <h1>AfroPunk Mongo Scraper</h1>
+      <h2><i>Recent Articles from the AfroPunk. visit /scrape to update your list.</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
