@@ -2,10 +2,11 @@
 //hide article section and show when scrape button is clicked
 $("#articles").hide();
 $(document).on('click', '#scrapebutton', function(){
+  window.alert()
   $("#articles").show();
 
   // Grab the articles as a json
-  $.getJSON("/articles", function(data) {
+  $.getJSON("/scrape", function(data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
